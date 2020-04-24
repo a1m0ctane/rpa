@@ -23,10 +23,14 @@ flow:
             - City: '${City}'
             - ZipCode: '${ZipCode}'
             - Country: '${Country}'
+        publish:
+          - Confirmation
         navigate:
           - SUCCESS: SUCCESS
           - WARNING: CUSTOM
           - FAILURE: FAILURE
+  outputs:
+    - Confirmation: '${Confirmation}'
   results:
     - FAILURE
     - CUSTOM
