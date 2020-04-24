@@ -24,8 +24,8 @@ extensions:
   graph:
     steps:
       Register_Users_By_Importing_Excel:
-        x: 386
-        'y': 145
+        x: 460
+        'y': 51
         navigate:
           63131ac7-bdd0-bbad-9360-6e678009163c:
             targetId: efd233ad-8bd1-8e8c-13de-54a10518cb78

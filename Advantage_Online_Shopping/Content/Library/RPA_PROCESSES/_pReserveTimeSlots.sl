@@ -1,6 +1,6 @@
 namespace: RPA_PROCESSES
 flow:
-  name: _pRegisterUser
+  name: _pReserveTimeSlots
   inputs:
     - Username: AmirKhan1982
     - Password:
