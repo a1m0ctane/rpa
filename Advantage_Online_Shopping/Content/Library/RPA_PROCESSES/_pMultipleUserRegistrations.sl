@@ -4,12 +4,10 @@ flow:
   inputs:
     - ImportFile: "C:\\Users\\khanamir\\Documents\\RPA Data\\RegisterUsers.xlsx"
   workflow:
-    - Register_Users_By_Importing_Excel:
+    - XLSUserImport:
         do:
-          User_Management.Register_Users_By_Importing_Excel:
+          User_Management.XLSUserImport:
             - ImportFile: '${ImportFile}'
-        publish:
-          - ResultFile
         navigate:
           - SUCCESS: SUCCESS
           - WARNING: CUSTOM
@@ -23,17 +21,17 @@ flow:
 extensions:
   graph:
     steps:
-      Register_Users_By_Importing_Excel:
-        x: 460
-        'y': 51
+      XLSUserImport:
+        x: 415.0138854980469
+        'y': 141.0520782470703
         navigate:
-          63131ac7-bdd0-bbad-9360-6e678009163c:
+          b730eae7-1476-73a6-1368-32e0afbd474a:
             targetId: efd233ad-8bd1-8e8c-13de-54a10518cb78
             port: WARNING
-          bc976474-cadf-2efb-fc77-269ef04e149b:
+          bae39ad3-ff3d-2ee0-c6c7-d45958f09035:
             targetId: c1fcf8c7-8fcd-4a18-a65b-bc032c2ec296
             port: SUCCESS
-          291bb5ef-9397-2c39-eee5-2955fec41e24:
+          66e98dd1-06d2-825c-ea82-cb2343ce6755:
             targetId: 0f6b942a-8ac7-f051-ac15-ac02fb45ec00
             port: FAILURE
     results:
